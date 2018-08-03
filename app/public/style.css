@@ -1,0 +1,19 @@
+.barriar-hr {
+    width: 55%;
+    margin-left: 0
+}
+
+.jumbotron {
+    width: 75%;
+    margin: auto;
+    padding: 32px;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+#sub-links {
+    width: 75%;
+    margin: auto;
+}
