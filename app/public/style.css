@@ -17,3 +17,8 @@
     width: 75%;
     margin: auto;
 }
+
+#modalImg {
+ max-width: 300px;
+ max-height: 300px;
+}

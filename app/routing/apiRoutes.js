@@ -11,9 +11,9 @@ app.get("/api/friends", function (req, res) {
 
 app.post("/api/friends", function (req, res) {
     var newFriend = req.body;
-    var bestFriendName = compareFriend(newFriend)
+    var bestFriend = compareFriend(newFriend)
     friends.push(newFriend);
-    res.json("{'bestFriend':'" + bestFriendName + "'}");
+    res.json(bestFriend);
 });
 } 
 
@@ -41,5 +41,5 @@ function compareFriend(newFriend)
             bestMatchID = i;
         }
     }
-    return friends[bestMatchID].name;
+    return {"name": friends[bestMatchID].name, "photoUrl": friends[bestMatchID].photo};
 }
